@@ -1,0 +1,21 @@
+Un objet se crée grâce à l'opérateur new.
+
+L'accès à un attribut ou à une méthode d'un objet se fait grâce à l'opérateur «->».
+
+Pour lire ou modifier un attribut, on utilise des accesseurs et des mutateurs.
+
+Le constructeur d'une classe a pour rôle principal d'initialiser l'objet en cours de création, c'est-à-dire d'initialiser la valeur des attributs (soit en assignant directement des valeurs spécifiques, soit en appelant diverses méthodes).
+
+Les classes peuvent être chargées dynamiquement (c'est-à-dire sans avoir explicitement inclus le fichier la déclarant) grâce à l'auto-chargement de classe (utilisation de spl_autoload_register).
+
+--
+
+L'opérateur « -> » permet d'accéder à un élément de tel objet, tandis que l'opérateur « :: » permet d'accéder à un élément de telle classe.
+
+Au sein d'une méthode, on accède à l'objet grâce à la pseudo-variable $this, tandis qu'on accède à la classe grâce au mot-clé self.
+
+Les attributs et méthodes statiques ainsi que les constantes de classe sont des éléments propres à la classe, c'est-à-dire qu'il n'est pas utile de créer un objet pour s'en servir.
+
+Les constantes de classe sont utiles pour éviter d'avoir un code muet, c'est-à-dire un code qui, sans commentaire, ne nous informe pas vraiment sur son fonctionnement.
+
+Les attributs et méthodes statiques sont utiles lorsque l'on ne veut pas avoir besoin d'un objet pour s'en servir.
